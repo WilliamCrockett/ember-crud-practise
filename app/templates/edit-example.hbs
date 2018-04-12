@@ -1,0 +1,7 @@
+<h2>{{model.text}}</h2>
+
+<form {{action 'updateExample' model on='submit'}}>
+  <h3>Edit Example</h3>
+  {{input placeholder='edit example' value=model.text}}
+  <button type='submit'>Save</button>
+</form>

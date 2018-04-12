@@ -3,10 +3,11 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'ember-crud-practise',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:4741/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -49,7 +50,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
+    ENV.rootURL = '/ember-deployment-guide'
+    ENV.locationType = 'hash'
+    ENV.apiHost = 'https://sheltered-thicket-74979.herokuapp.com/'
   }
 
   return ENV;

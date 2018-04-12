@@ -1,0 +1,9 @@
+<h2>Examples</h2>
+
+<ul>
+  {{#each model as |example|}}
+  <li>{{#link-to 'edit-example' example}} {{example.text}} {{/link-to}} <span {{action 'deleteExample' example}}>{{fa-icon "trash" size=2}}</span></li>
+  {{/each}}
+</ul>
+
+{{new-example addExample='addExample'}}
