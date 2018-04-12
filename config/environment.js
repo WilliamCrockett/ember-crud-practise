@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/ember-deployment-guide'
     ENV.locationType = 'hash'
-    ENV.apiHost = 'https://sheltered-thicket-74979.herokuapp.com/'
+    ENV.apiHost = 'https://crew-api.herokuapp.com/'
   }
 
   return ENV;
