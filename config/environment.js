@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/ember-crud-practise'
     ENV.locationType = 'hash'
-    ENV.apiHost = 'https://crew-api.herokuapp.com/'
+    ENV.apiHost = 'https://sheltered-thicket-74979.herokuapp.com/'
   }
 
   return ENV;
